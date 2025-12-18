@@ -1,0 +1,8 @@
+/*interest*/
+.top .navigation li.interest, .top .navigation li.interest:hover {/*·í«e­¶ÅÒ*/
+	background-position: -320px -70px;
+}
+.interest {
+	z-index: 30;
+	;
+}

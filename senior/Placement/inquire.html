@@ -1,0 +1,224 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/templete-logged.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>生涯落点分析系统-高中生</title>
+<!-- InstanceEndEditable -->
+<link rel="icon" href="images/favicon.ico" mce_href="../images/favicon.ico" type="image/x-icon">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/analysis.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- default value -->
+<script src="js/jquery.defaultvalue-1.0.source.js"></script>
+<!-- go top -->
+<script language="javascript" src="js/scrolltotop.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="EditRegion4" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<!-- head -->
+<div class="head">
+  <div class="content">
+    <div class="floatleft"><a href="index.html" class="homeBtn">首頁</a>｜<a href="http://nicecareer.net/catdl/senior/info/index.aspx">生涯测评系统</a>｜<a href="http://nicecareer.net/catdl/careers/">生涯信息系统</a>｜<a href="http://nicecareer.net/">好生涯入口网</a></div>
+    <div class="floatright">王小美，您好！&nbsp;&nbsp;&nbsp;<a class="normalBtn style1" href="index.html">注销</a> </div>
+  </div>
+</div>
+
+<!-- top -->
+<div class="top">
+  <div class="content">
+    <div class="banner"><a href="index.html">生涯落点分析系统</a></div>
+  </div>
+  <div class="forNav">
+    <div class="content">
+      <ul class="navigation">
+        <li class="news"><a href="index.html">生涯新闻</a></li>
+        <li class="studentData"><a href="sys.html">系统简介</a></li>
+        <li class="aptitude"><a href="inquire.html">生涯落点查询</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- main -->
+<div class="main">
+  <div class="content">
+    <div class="breadcrumbs">目前位置：<!-- InstanceBeginEditable name="EditRegion2" --><a href="index.html">首页</a>&gt;<a href="inquire.html">生涯落点查询</a><!-- InstanceEndEditable --></div>
+  </div>
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+  <div class="title">
+    <div class="content">
+      <div class="icon icon03"></div>
+      生涯落点查询</div>
+  </div>
+  <!-- ------- ------- ------- ------- ------- ------- ------- -->
+  <div class="BgWhite">
+    <div class="content">
+      <div class="inquire-block"> <br>
+        <table width="100%" border="0"  class="table2 withNoTopBorder">
+          <tr>
+            <th style="text-align:right; width:15%;">所在年级:&nbsp;</th>
+            <td><select name="select2" onchange="" id="">
+                <option selected="selected" value="0">选择: 年级</option>
+                <option value="台中市">高一</option>
+                <option value="台中县">高二</option>
+                <option value="台北市">高三</option>
+              </select></td>
+          </tr>
+          <tr>
+            <th style="text-align:right;">高考分科:&nbsp;</th>
+            <td><input id="R1" type="radio" name="radio2" value="1" checked="checked">
+              <label for="R1">理科</label>
+              <input id="R2" type="radio" name="radio2" value="2">
+              <label for="R2">文科</label>
+              <input id="R3" type="radio" name="radio2" value="3" >
+              <label for="R3">不分文理</label></td>
+              <script>
+			  $(function(){
+				  $("#R1").click( function(){
+					  $(".forR3").attr("disabled",true);					  
+				  });
+				  $("#R2").click( function(){
+					  $(".forR3").attr("disabled",true);					  
+				  });
+				  $("#R3").click( function(){
+					  $(".forR3").attr("disabled",false);					  
+				  });
+			  });
+			  </script>
+          </tr>
+          <tr>
+            <th valign="top" style="text-align:right; line-height:1.8em;">選考科目分數:&nbsp;</th>
+            <td style="padding:0px;"><table width="100%" border="0" class="table0">
+                <tr>
+                  <td>歷史
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"></td>
+                  <td>地理
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"></td>
+                  <td>思想政治
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"></td>
+                </tr>
+                <tr>
+                  <td>物理
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"></td>
+                  <td>化學
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"> </td>
+                  <td>生物
+                    <input name="" type="text" style="width:80px;" class="forR3" disabled="disabled"></td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr>
+            <th style="text-align:right;">高考(预估)分数:&nbsp;</th>
+            <td><input name="" type="text"></td>
+          </tr>
+          <tr>
+            <th style="text-align:right;">录取批次:&nbsp;</th>
+            <td><select name="select2" onchange="" id="">
+                <option selected="selected" value="0">选择：批次</option>
+                <option value="台中市">一批</option>
+                <option value="台中县">二批</option>
+                <option value="台北市">三批</option>
+              </select></td>
+          </tr>
+          <tr>
+            <th style="text-align:right; vertical-align:top;">意向求学地区: </th>
+            <td><!--<div style="color:Red; margin-bottom:5px;">最多选五个地区</div>-->
+              <div>
+                <table width="100%" border="0" class="table0">
+                  <tr>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">北京</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">天津</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">河北</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">山西</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">內蒙古</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">遼寧</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">吉林</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">黑龍江</label></td>
+                  </tr>
+                  <tr>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">上海</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">江蘇</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">浙江</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">安徽</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">福建</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">江西</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">山東</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">河南</label></td>
+                  </tr>
+                  <tr>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">湖北</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">湖南</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">廣東</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">廣西</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">海南</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">重慶</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">四川</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">貴州</label></td>
+                  </tr>
+                  <tr>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">雲南</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">西藏</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">陝西</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">甘肅</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">青海</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">寧夏</label></td>
+                    <td><input name="" type="checkbox" value="">
+                      <label for="">新疆</label></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </div></td>
+          </tr>
+        </table>
+        <br>
+        <div class="page text-center"><a href="inquireResult.html" class="normalBtn style2 big">开始测试</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- ------- ------- ------- ------- ------- ------- ------- -->
+  <div class="forFooter BgWhite"></div>
+  <!-- InstanceEndEditable --> </div>
+
+<!-- footer -->
+<div class="footer">
+  <div class="footer2"> 本站最佳分辨率为1024×768建议以IE 10以上版本搭配浏览<br>
+    © 2017 NICE CAREER All rights reserved.  </div>
+</div>
+</body>
+<!-- InstanceEnd --></html>

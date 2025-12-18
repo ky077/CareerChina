@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>生涯测评系统-高中版-学生端</title>
+<link rel="icon" href="images/favicon.ico" mce_href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/rwd-table.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!-- --> 
+
+<!-- -->
+<div class="main index-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+        <div class="index-banner">
+          <img src="images/banner.png" class="img-responsive center-block">
+        </div>
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+        <div class="whiteBlock">
+          <h3>忘记密码?</h3>
+          <form action="changePD.html">
+            <div class="form-group">
+              <label for="">请输入注册的手机号、邮箱或赞生涯帐号：</label>
+              <input type="text" class="form-control" id="" placeholder="手机号/邮箱/赞生涯帐号">
+            </div>
+            <p class="help-block">*验证码需在十五分钟内输入，逾期失效。</p>
+            <button type="submit" class="btn btn-default" onClick="alert('已发送验证码至注册的手机号/邮箱！')">发送验证码</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -->
+<div class="footer">
+  <div class="container">
+    <p>本站最佳分辨率为1024×768建议以IE 10以上版本搭配浏览</p>
+    <p>© 2018 NICE CAREER All rights reserved.</p>
+  </div>
+</div>
+<!-- --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+$(window).on('resize',function() {
+	$loginSpace = ($(window).height() - $(".index-main").outerHeight() - $(".footer").outerHeight())/2;
+	$(".index-banner").css("margin-top", $loginSpace+"px");
+
+});
+$(document).ready(function() {
+    $(window).trigger('resize');
+});
+</script>
+</body>
+</html>

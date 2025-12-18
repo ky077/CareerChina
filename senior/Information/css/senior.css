@@ -1,0 +1,495 @@
+﻿.clearfloat{
+	clear:both;
+}
+.clearfloat:before,.clearfloat:after {
+        content:"";
+        display:table;
+}
+.clearfloat:after {
+        clear:both; /* For IE 6/7 (trigger hasLayout) */
+}
+.clearfloat {
+        zoom:1;
+}
+
+/*表格*/
+.table1 {
+	border-left: 1px solid #0980c4;	
+	border-right: 1px solid #0980c4;
+}
+.table1 th, .table1 td { 
+	padding-left:5px;	
+}
+.table1 th {
+	/*background-image: url(../images/table1_th_senior.jpg);*/
+	text-align: center;
+	background-color: #de4e00;
+	background-image: url(../images/table1_th_senior.jpg);
+	color: #FFF;
+}
+.table1 td {
+	border-bottom: 1px solid #0980c4;
+}
+.table1 .Lth {
+	background-image: url(../images/picTable_bg.gif);
+	text-align: center;
+}
+
+blockquote {
+	display: block;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	margin: 0px;
+	border:none;
+	font-size: 1em;
+	line-height:1.8em;
+}
+
+#sort { 
+	width: 100%;
+	font-weight: bold;
+	font-size: 125%;
+	padding-left: 25px;
+	background-repeat: no-repeat;
+}
+#title {
+	font-weight: bold;
+	font-size: 140%;
+}
+#content dl {
+	display: block;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	/*position: relative;*/
+	border: 1px solid #CCC;
+	background-color:#FFF;
+}
+#content dt {
+	/*height: 50px;
+	line-height: 50px;*/
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left: 15px;
+	background-repeat: repeat-x;
+	display: block;
+	font-size: 120%;
+	font-weight: bold;
+	background-image: url(../images/dt_bg.jpg);
+	border-top: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #CCC;
+	border-left: 1px solid #FFF;
+	margin-bottom: 5px;
+}
+#content dd {
+	display: block;
+	color: #191919;
+	font-size:1em;
+}
+#content dd a{
+	color: #00F;
+}
+
+
+/*	       高中職科介紹 頁 CSS        */
+/************************************/
+p{/*待確認位置，為高中職才新增之p規則*/
+	margin:0px;
+	padding:0px;
+	text-indent: 2em;
+}
+/************************************/
+#textfield{
+background-color: #d8703d; 
+}
+
+dt, #sort {/*高中職標題字顏色*/
+	color: #623d94;
+}
+.dt2 {/*高中職標題字顏色*/
+	color: #9ac855;
+}
+
+/*menu 圓角- 橘線*/
+.rLine1{background-position: -250px -350px; }
+.rLine2{background-position: -263px -350px; }
+.rLine3{background-position: -250px -363px; }
+.rLine4{background-position: -263px -363px; }
+/*-------*/
+#sort {
+	color: #623d94;
+	background-image: url(../images/spot.gif);
+}
+/*-----------*/
+.lastest_title {/*??*/
+	color: #90600c;
+}
+/*****************************************************/
+/*高中職群科特殊版型*/
+#senior #title { 
+	min-height: 84px;
+	/*background-image: url(../images/title_bg_senior.jpg);*/
+	margin-top: 5px;
+	/*padding-top: 10px;*/
+	padding-right: 15px;
+	/*padding-bottom: 10px;*/
+	padding-left: 15px;
+	color: #666;	
+}
+#senior  #title .figure {
+	float: left;
+	margin-right: 15px;
+	border: 4px solid #007b42;
+	border-radius:50%;
+}
+#senior  #title .figure > img {
+	border-radius:50%;
+	border: 1px solid #fff;
+}
+#senior  #title .mainTitle {
+	font-size: 120%;
+	line-height: 38px;
+	color:#007b42;
+}
+#senior  #title .subTitle {
+	text-align: right;
+	color: #9ac855;
+}
+.dt2 {
+	font-size: 110%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	padding-left: 35px;
+	background-image: url(../images/dt2_senior.gif);
+	background-repeat: no-repeat;
+	background-position: 17px center;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+
+.pic {
+	float:left;
+	background-color: #eaf9ff;
+	padding-top: 15px;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-bottom: 5px;
+	break: break-all;
+	max-width:315px;
+	border: 1px solid #2a77c9;
+	margin-right: 15px;
+	margin-left: calc((100% - 315px - 315px - 15px)/2);
+}
+
+.pic img { width:100%;}
+.pic img.arrow { width:12px;}
+.piclast {margin-right: 0px; margin-left:0px;}
+@media screen and (max-width: 768px) {
+.pic {
+	float: none;
+	margin-left: 0px;
+	margin:0px auto 15px auto;
+}	
+}
+
+
+.picTable {
+	display: block;
+	text-align: center;
+}
+.picTable li {
+	display: block;
+	float: left;
+	width: 137px;
+	margin-right: 8px;
+
+	font-size: 120%;
+
+	padding-top: 10px;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	padding-left: 8px;
+	position: relative;
+}
+.pt1 li {
+	background-color: #d3dfe5;	
+	border: 1px solid #91adbc;	
+}
+.pt2 li {
+	background-color: #dee7d1;	
+	border: 1px solid #8c9d73;
+}
+.picTable li ul li {
+	color: #FFF;
+	width: 113px;
+	font-size: 85%;
+	margin-bottom: 8px;
+	line-height: 22px;
+	border: 3px solid #FFF;
+	background-repeat: repeat-x;
+	text-align: left;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.picTable li .picTable_1 li {
+	background-color: #278a9f;
+	background-image: url(../images/picTable_bg1.gif);
+}
+.picTable li .picTable_2 li {
+	background-color: #3375a9;
+	background-image: url(../images/picTable_bg2.gif);	
+}
+.picTable li .picTable_3 li {
+	background-color: #284fa0;
+	background-image: url(../images/picTable_bg3.gif);	
+}
+.picTable li .picTable_4 li {
+	background-color: #32238e;
+	background-image: url(../images/picTable_bg4.gif);	
+}
+.picTable li .picTable_5 li {
+	background-color: #1d5c51;
+	background-image: url(../images/picTable_bg5.gif);	
+}
+.picTable li .picTable_6 li {
+	background-color: #1c5e31;
+	background-image: url(../images/picTable_bg6.gif);	
+}
+.picTable li .picTable_7 li {
+	background-color: #458632;
+	background-image: url(../images/picTable_bg7.gif);	
+}
+.picTable li .picTable_8 li {
+	background-color: #709742;
+	background-image: url(../images/picTable_bg8.gif);	
+}
+.gotop a{
+	background-position: 0px 0px;
+}
+.gotop a:hover {background-position: 0px -25px;}
+
+
+/*openMenu*/
+.openMenu {
+	background-image: url(../images/spot.gif);
+	background-repeat: no-repeat;
+	text-indent: 20px;
+	background-size:18px 18px;
+	background-position:0px 4px;
+}
+.openMenu .OM_list {
+	color: #00F;
+	text-decoration: underline;
+	cursor: pointer;
+	cursor: hand;
+}
+.openMenu .OM_tip {
+	background-color: #b8e6fe;
+	margin-bottom: 5px;
+	padding: 10px;
+	margin-top: 5px;
+	text-indent: 0px;
+	display:none;
+}
+.openMenu .OM_title {
+	font-size: 120%;
+	font-weight: bold;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0980c4;
+}
+.openMenu .OM_close {
+	position: absolute;
+	background-image: url(../images/allBtnPic.png);
+	background-position: 0px -400px;
+	height: 20px;
+	width: 20px;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	cursor: hand;
+}
+.relative{	position: relative;
+}
+/***************/
+#content dt {
+	border-top: 4px solid #007b42;
+	color:#007b42;
+}
+/* xmind */
+.xmind {
+	display: block;
+	margin:0 auto;
+	/*width: 700px;*/
+    height: auto;
+}
+/* senior_index頁*/
+#content {
+	
+}
+.AD {
+	width:730px;
+	height:auto;
+	margin-top:5px;
+}
+.Box {
+	width:100%;
+	padding:10px 0px;
+	height:auto;
+}
+.BoxBlock li{
+	border:1px solid #CCC;
+	padding:5px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+	position:relative;
+	background-color:#FFF;
+}
+.BoxBlock li, .BoxBlock img  {
+	/*width:224px; 
+	height:165px;*/
+}
+.BoxBlock a img{border:0;}
+.BlockBG {
+	background-color: #000;
+	position: absolute;
+	height: 30px;
+	width: 224px;
+	left: 5px;
+	bottom: 5px;
+	opacity: 0.6; /*這是給Opera等其他判讀*/ 	
+	filter:alpha(opacity=60); /*這是給IE判讀*/
+	-moz-opacity: 0.6; /*這是給Firefox、Safari判讀*/
+}
+a.BlockText {
+	font-weight: bold;
+	color: #FFF;
+	/*line-height: 30px;
+	height: 30px;
+	width: 214px;*/
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	overflow:hidden;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+}
+.BoxBlock li:hover a.BlockText{
+	color: #ff7d00;
+}
+/* 學校選單 (如何進入此職科) */
+.school {
+	clear: left;
+	width: 100%;
+	border:1px solid #0980c4;
+	margin:0 auto;
+	padding-bottom:10px;
+}
+ul.regions {
+	width: 100%;
+	height: auto;
+	padding:0px;
+}
+ul.regions li {
+	float: left;
+	/*height: 30px;*/
+	line-height: 30px;
+	overflow: hidden;
+	position: relative;
+	background: #eaf9ff;
+	width:12.5%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	text-align:center;
+	border-bottom:1px solid #0980c4;
+	border-right:1px solid #0980c4;
+}
+
+ul.regions li:nth-child(8n) {
+	border-right:none;
+}
+ul.regions li.region_last { border-right:1px solid #0980c4; width:110px;}
+ul.regions li.region_last.noLine {  border-right:0;}
+ul.regions li a {
+	display: block;
+	font-weight:bold;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+@media screen and (max-width: 320px) {
+ul.regions li a {
+	font-size:0.88em;
+}
+}
+#content ul.regions li a {color: #999;}
+#content ul.regions li a:hover { color:#444;}
+ul.regions li.active  {
+	background: #fff;
+	background-image:url(../images/table1_th_senior.jpg);
+}
+#content ul.regions li.active a { color:#FFF;}
+.school .tab_shool { padding-top:10px; border-top:3px solid #0980c4;}
+.school .tab_shool span { font-size:90%; padding:0 5px; border:1px solid #CCC; margin-right:5px; color:#333; }
+span.s1{ background-color: #d2f1ff;}
+span.s2{ background-color: #ffdede;}
+span.s3{ background-color: #d1ffe1;}
+.school .tab_shool table { width:100%; margin:0 auto;}
+.school .tab_shool th {
+	font-weight:normal;
+	width:65px;
+	text-align:center;
+	valign:top;
+	vertical-align: top;
+}
+.school .tab_shool th, .school .tab_shool td { border-bottom:1px dotted #666; padding:5px 0px;}
+.school .tab_shool .last th , .school .tab_shool .last td{border-bottom:0;}
+.school .tab_shool ul {
+	padding:0px;
+}
+.school .tab_shool li {
+	float:left;
+	color:#6d9755;
+	padding-right:5px;
+	/*background-image: url(../images/lispot.gif);
+	background-repeat: no-repeat;
+	background-position: 5px 12px;*/
+	text-indent: 14px;
+	min-width:25%;
+	list-style-position:inside;
+}
+#content .school .tab_shool li a {color:#6d9755; text-decoration:none;}
+#content .school .tab_shool li a:hover {
+	color:#9ac855;
+	text-decoration: underline;
+}
+.mark{text-align:right; font-size:0.9em; line-height:20px; padding-top:5px; background-color:transparent !important;}
+.addLine1{border-bottom:1px solid #ccc;}
+img { vertical-align:middle; }
+
+#content .gray a { color: #585858; text-decoration: underline;}
+#content .darkGray a:hover, #content .gray a:hover  { color: #00F; text-decoration: underline;}
+
+
+#sort >span { display:inline-block;}
+#sort >span+span{ display:none;}
+#sort >span+span+span{ display:inline-block;}
+
+#sort >span:nth-child(1) { display:inline-block;}
+#sort >span:nth-child(2) { display:none;}
+#sort >span:nth-child(3) { display:inline-block;}
+
+
+

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>生涯落点分析系统-高中生</title>
+<!-- TemplateEndEditable -->
+<link rel="icon" href="../images/favicon.ico" mce_href="../images/favicon.ico" type="image/x-icon">
+<link href="../css/styles.css" rel="stylesheet" type="text/css">
+<link href="../css/analysis.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<!-- default value -->
+<script src="../js/jquery.defaultvalue-1.0.source.js"></script>
+<!-- go top -->
+<script language="javascript" src="../js/scrolltotop.js" type="text/javascript"></script>
+<!-- TemplateBeginEditable name="EditRegion4" -->
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<!-- head -->
+<div class="head">
+  <div class= "content">
+    <div class="floatleft"><a href="../index.html" class="homeBtn">首頁</a>｜<a href="http://nicecareer.net/catdl/senior/info/index.aspx">生涯测评系统</a>｜<a href="http://nicecareer.net/catdl/careers/">生涯信息系统</a>｜<a href="http://nicecareer.net/">好生涯入口网</a></div>
+    <div class="floatright"><a class="normalBtn style1" href="register.html">注册帐号</a>&nbsp;&nbsp;&nbsp;<a class="normalBtn style1" href="../login.html">登录</a> </div>
+  </div>
+</div>
+
+<!-- top -->
+<div class="top">
+  <div class="content">
+    <div class="banner"><a href="../index.html">生涯落点分析系统</a></div>
+  </div>
+  <div class="forNav">
+    <div class="content">
+      <ul class="navigation">
+        <li class="news"><a href="index.html">生涯新闻</a></li>
+        <li class="studentData"><a href="sys.html">系统简介</a></li>
+        <li class="aptitude"><a href="inquire.html">生涯落点查询</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- main -->
+<div class="main">
+  <div class="breadcrumbs">
+    <div class="content"> 目前位置：<!-- TemplateBeginEditable name="EditRegion2" --><a href="../default.html">首页</a>&gt;<a href="../default.html">最新信息</a><!-- TemplateEndEditable --> </div>
+  </div>
+  <!-- TemplateBeginEditable name="EditRegion3" -->(可編輯區域在這裡)<!-- TemplateEndEditable --> </div>
+
+<!-- footer -->
+<div class="footer">
+  <div class="footer2"> 本站最佳分辨率为1024×768建议以IE 10以上版本搭配浏览<br>
+    © 2017 NICE CAREER All rights reserved. </div>
+</div>
+</body>
+</html>

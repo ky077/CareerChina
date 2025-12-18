@@ -1,0 +1,294 @@
+@import "reset";
+/* ******* ******* ******* ******* ******* ******* ******* */
+html{
+	position:relative;
+	min-height: 100%;
+	
+	background-color:#fff;
+	background-image: url(../images/APP/bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	&.whiteBg{
+		
+	}
+	&.indexBg{
+		background-image: url(../images/APP/indexBg.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&.Endpage{
+		background-image: url(../images/APP/EndpageBg.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+body {
+	margin-bottom:46px;
+	
+	width:100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif, "Microsoft YaHei", "SimSun";
+	background-color: transparent !important;
+	line-height: 1.4em;
+	font-size: 20px;
+	
+}
+html.indexBg body,
+html.Endpage body {
+	margin-bottom:0px;
+}
+.header{
+	background-image: url(../images/APP/headerBg.jpg);
+	background-repeat:repeat-x;
+	background-size:auto 100%;
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+.main{
+	background-image:url(../images/APP/mainBg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	&.test{
+		background-image:none;
+		background-color:#FFF;
+	}
+	&.Endpage{
+		background-image:none;
+	}
+}
+html.indexBg .main,
+html.Endpage .main {
+	background-image: none;
+}
+.footer{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+  
+	background-color: #146026;
+	padding:5px 0px 5px 0px;
+}
+html.indexBg .footer{
+	background-image:none;
+	background-color:transparent;
+	text-align:center;
+	font-size:0.8em;
+	color:#FFF;
+	height:auto;
+	font-weight:700;
+	line-height:1.2em;
+	text-shadow:1px 1px rgba(0,0,0,.25);
+}
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*UI*/
+@media screen and (min-width: 1200px) {
+.container {
+    width: 970px;
+}	
+}
+.img-responsive.forIE{width: 100% !important;}
+.table-forCenter{
+	border-collapse:collapse;
+	border-spacing:0;
+	padding: 0px;
+	margin: 0px;
+	text-align:center;
+	vertical-align:middle;
+	width:100%;
+	height:100%;
+}
+.table-forMainCenter{
+	border-collapse:collapse;
+	border-spacing:0;
+	padding: 0px;
+	margin: 0px;
+	text-align:center;
+	vertical-align:middle;
+	width:100%;
+}
+.btn-ok{ 
+	display:block;
+	float:right;
+	width:90px;
+	height:36px;
+	background-image:url(../images/aPP/btn1_1.gif);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	text-indent:-9999px;
+	overflow:hidden;
+	&:hover{
+		background-position:0px -40px;
+	}
+}
+.btn-check{
+	display:block;
+	background-image:url(../images/btn3.gif);
+	width:90px;
+	height:36px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+.table-Qnum{
+	td{
+		vertical-align:middle;
+		line-height:1em;
+		padding:0px;
+	}
+}
+.Qnum{ 
+	color:#0e6d16;
+	font-weight:bold;
+	font-size:3vw;
+	white-space:nowrap;
+	text-shadow:1px 1px rgba(255, 255, 255, 0.75);
+	@media screen and (min-width: 768px) {font-size:1.2em;}
+	> label{
+		display:inline-block;
+		color: #a42a2a;
+		width: 2em;
+		text-align:center;
+	}
+}
+.title, .topic {
+    padding: 5px 15px;
+    background-color: #fcf3b0;
+	> b{
+		font-weight:bold;
+	}
+}
+.text-right{
+	text-align:right;
+}
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*Default-APP.~*/
+.img-loginHeader{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.login-bg{ 
+	
+	.table-login{  
+		width: 100%;
+		margin-left:auto;
+		margin-right:auto;
+		td { 
+			padding: 4px 0px;
+		}
+		
+		.loginInput {
+			width:100%;
+			padding: 5px;
+			border-radius: 4px;
+			border: 1px solid #ccc;
+			background-color:#FFF;
+			&::placeholder {
+				color:#999;
+			}
+		}
+		.loginBtn{
+			display: block;
+			width: 91px;
+			height: 91px;
+			margin-left:auto;
+			margin-right:auto;
+			background-image: url(../images/APP/loginBtn.png);
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			
+			&:hover{
+				background-position:0px -100px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 500px) {
+.login-bg{
+	.table-login{ 
+		width: 60%;
+	}
+}	
+}
+@media screen and (min-width: 768px) {
+.img-loginHeader{
+	float:left;
+}		
+.login-bg{
+	width: 644px;
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px 10% 0px 18%;
+	
+	
+	.table-login{ 
+		width: 100%;
+		
+		.loginBtn{
+			float:left;
+			margin-top:-5px;
+			margin-left:-15px;
+		}
+	}
+}	
+}
+@media screen and (min-width: 768px) and (min-height: 600px){
+.login-bg{
+	
+}
+}
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*login2.~*/
+.img-data{
+	margin-top:10px;
+}
+.dataBlock {
+    background-color: #FFF;
+    border: 2px solid #196319;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.table-login2{ 
+	width:100%;
+	td{
+		padding: 5px;
+	}
+	tbody{
+		th{
+			padding: 5px;
+			text-align:right;
+			font-weight:700;
+			width:42%;
+		}
+		td{
+			padding: 5px;
+			text-align:left;
+		}
+	}
+}
+@media screen and (max-height: 530px) {
+.img-data{
+	display:none;
+}
+.table-login2{ 
+	tr.hidden-landscape td{
+		display:none;
+	}
+	br{
+		display:none;
+	}
+}	
+}
+/* ******* ******* ******* ******* ******* ******* ******* */

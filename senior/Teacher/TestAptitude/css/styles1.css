@@ -1,0 +1,8 @@
+/*aptitude*/
+.top .navigation li.aptitude, .top .navigation li.aptitude:hover {/*·í«e­¶ÅÒ*/
+	background-position: -160px -70px;
+}
+.aptitude {
+	z-index: 1;
+}
+

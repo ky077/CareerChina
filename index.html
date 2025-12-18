@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Career</title>
+<title>CareerCN</title>
 <style>
 * {
 	transition: all .3s ease-in;
@@ -24,7 +24,7 @@ table th, table td {
 	padding: 15px;
 }
 table th {
-	background-color: #f8d7da;
+	background-color: #ddd;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -44,12 +44,35 @@ a:hover {
 	font-weight: bold;
 }
 table tr:hover {
-	background-color: #ffffee;
+	background-color: #FFEEEE;
 }
-.text-muted, .text-muted *{
+.text-muted, .text-muted * {
 	color: #bbb;
 }
-	
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+}
+footer > div {
+	display: inline-block;
+}
+footer > div > a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	color: #333;
+}
+footer > div > a:hover {
+	transform: scale(1);
+}
+footer > div > a.active {
+	background-color: #333;
+	color: #fff;
+}
 </style>
 </head>
 
@@ -57,61 +80,39 @@ table tr:hover {
 <table>
   <thead>
     <tr>
-      <th>名稱</th>
-      <th>DEMO網頁</th>
-      <th>工程師網頁</th>
+      <th width="60%">高中名称</th>
+      <th width="20%">DEMO网页</th>
+      <th width="20%">工程师网页</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>赞生涯入口网</td>
-      <td><a href="CareerInfo/index.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"><a href="http://140.122.118.47/careerinfo/" target="_blank">莘倫</a></td>
-    </tr>
-    <tr>
-      <td>讚生涯<b>高中版</b>生涯測驗系統 - 學生端</td>
-      <td><a href="STUDENT/index.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"></td>
-    </tr>
-    <tr>
-      <td>生涯水晶球</td>
-      <td><a href="CRYSTAL-BALL/guide.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"><a href="http://140.122.118.47/careerinfo/3d3.aspx" target="_blank">莘倫</a></td>
-    </tr>
-    <tr>
-      <td>自動化生涯諮詢系統</td>
-      <td><a href="BOT/index.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"><a href="https://teemi.tw/MOE_chatbot/career/Chat.aspx" target="_blank">盈芳</a></td>
-    </tr>
-    <tr>
-      <td>興趣測驗-<b>高中版</b>-英語版</td>
-      <td><a href="TI-EN/Default-APP.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"></td>
+      <td>赞生涯生涯落点分析系统 高中生</td>
+      <td><a href="senior/Placement/index.html" target="_blank">DEMO</a></td>
+      <td class="text-muted"><a href="" target="_blank"></a></td>
     </tr>
   </tbody>
 </table>
-	<br>
-
-	<table>
+<br>
+<!--<table>
   <thead>
     <tr>
-      <th>名稱</th>
-      <th>DEMO網頁</th>
-      <th>工程師網頁</th>
+      <th width="60%">国中名称</th>
+      <th width="20%">DEMO网页</th>
+      <th width="20%">工程师网页</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>讚生涯<b>國中版</b>生涯測驗系統 - 學生端</td>
-      <td><a href="STUDENT-J/index.html" target="_blank">DEMO</a></td>
+      <td></td>
+      <td><a href="STUDENT-J/index.html" target="_blank"></a></td>
       <td class="text-muted"></td>
     </tr>
-	    <tr>
-      <td><b>國中版</b>自動化生涯諮詢系統(待改色系、流程)</td>
-      <td><a href="BOT-J/index.html" target="_blank">DEMO</a></td>
-      <td class="text-muted"></td>
-    </tr>  
   </tbody>
-</table>
+</table>-->
+<footer>
+  <div><a href="https://ky077.github.io/CareerCN/" class="active">陆版</a></div>
+  <div><a href="https://ky077.github.io/Career/">台版</a></div>
+</footer>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="whiteBg">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="theme-color" content="#b84619">
+<meta name="msapplication-navbutton-color" content="#b84619">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#b84619">
+<title>工作价值组合</title>
+<link rel="icon" href="images/APP/favicon.ico" mce_href="images/APP/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="images/APP/favicon.png"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles-APP.css">
+</head>
+
+<body>
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+<div class="header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-5"> <img src="images/APP/header.png" class="img-responsive img-header" alt="工作价值组合"> </div>
+      <div class="col-xs-7">
+        <table class="table-Qnum pull-right">
+          <tr>
+            <td><span class="Qnum">第
+              <label>5</label>
+              题 / 共计
+              <label>999</label>
+              题</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+<div class="main test">
+  <div class="title">请仔细阅读以下描述，依照重要程度进行比较，将其拖曳到量尺上的对应位置。<br>
+    <b style="color: #e27500;">在我的理想工作中，我认为重要的是......</b> </div>
+</div>
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+<div class="footer">
+  <div class="container-fluid"><a href="Endpage.html" class="btn-ok">确定</a> </div>
+</div>
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<script src="js/jquery.min.js"></script> 
+<script>
+$(window).on('resize',function() {	
+	$countMainH = $(window).height() - $(".header").outerHeight() - $(".footer").outerHeight();
+	$(".main").css("min-height",$countMainH);
+
+	$countLineH = $(".img-header").height();
+	$(".table-Qnum td").css("height", $countLineH-2);
+});
+$(document).ready(function() {
+    $(window).trigger('resize');
+});
+</script>
+</body>
+</html>

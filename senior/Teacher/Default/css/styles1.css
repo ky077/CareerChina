@@ -1,0 +1,7 @@
+/*aptitude*/
+.top .navigation li.news, .top .navigation li.news.news:hover {/*·í«e­¶ÅÒ*/
+	background-position: 0px -70px;
+}
+.news {
+	z-index: 1;
+}

@@ -1,0 +1,277 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>生涯信息系统（高中生）</title>
+<!-- InstanceEndEditable -->
+<link rel="shortcut icon" type="image/x-icon" href="images/career.ico" >
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/2018styles.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<!-- InstanceParam name="logoutArea" type="boolean" value="true" -->
+<!-- InstanceParam name="loginArea" type="boolean" value="false" -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="goTop"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></div>
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="header">
+  <div class="container">
+    <div class="subnav clearfix"> <span class="pull-right"> <a href="index.html" class="homeBtn">首页</a><a href="" class="hidden-xs hidden-sm">初中版</a><a href="javascript:" onclick="alert('尚未开放！')" class="hidden-xs hidden-sm">大学版</a><a href="" class="hidden-xs hidden-sm">生涯测评系统</a><a href="http://nicecareer.net" class="careerBtn">好生涯入口网</a></span></div>
+    <div class="logo"><img src="images/topLogo.png" alt="生涯信息系统（高中生）" class="img-responsive"></div>
+    <div class="navbar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right navigation">
+          <li><a href="news_board.html">公告信息</a></li>
+          <li><a href="sysIntro.html">系统简介</a></li>
+          <li><a href="senior_index.html">本科专业介绍</a></li>
+           
+          <!-- ↓未登入 顯示區↓ -->
+          <li class="li-login hidden-md hidden-lg">
+            <input type="button" name="input" id="input" value="登录" class="btn btn-default btn-gray" data-toggle="modal" data-target="#modal-login"/>
+          </li>
+          <!-- ↑未登入 顯示區↑ --> 
+           
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ↓未登入 顯示區↓ --> 
+<!-- Modal #modal-login start -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">登录</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="apdiv" class="sr-only">帐号</label>
+          <input type="text" class="form-control" id="apdiv" placeholder="帐号">
+        </div>
+        <div class="form-group">
+          <label for="apdiv" class="sr-only">密码</label>
+          <input type="password" class="form-control" id="apdiv" placeholder="密码">
+        </div>
+        <button type="submit" class="btn btn-default btn-block btn-gray">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal #modal-login end --> 
+<!-- ↑未登入 顯示區↑ --> 
+ 
+
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="main">
+  <div class="container">
+    <div class="row"> 
+      <!-- left start -->
+      <div class="hidden-xs hidden-sm left"> 
+        <!-- login start -->
+        <div class="login">
+          <ul class="list-inline tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#student" aria-controls="student" role="tab" data-toggle="tab">使用者</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="student">  
+              <!-- ↓未登入 顯示區↓ -->
+              <div class="notLogin">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>帐号：</th>
+                      <td><input name="TB_uid1" type="text" id="TB_uid1" class="textfield"></td>
+                    </tr>
+                    <tr>
+                      <th>密码：</th>
+                      <td><input name="TB_upw1" type="password" id="TB_upw1" class="textfield"></td>
+                    </tr>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <td><input type="submit" name="button" id="loginbtn1" value="登录" class="btn btn-default btn-gray logbtn"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- ↑未登入 顯示區↑ --> 
+                </div>
+          </div>
+        </div>
+        <!-- login end --> 
+        <!-- InstanceBeginEditable name="subjectMenu" --><!-- InstanceEndEditable --> </div>
+      <!-- left end --> 
+      <!-- right start -->
+      <div class="right"> <!-- InstanceBeginEditable name="rightContentArea" -->
+        <div class="title">公告信息</div>
+        <!-- NEWS start -->
+        <div class="news_table_border">
+          <table class="news_table table">
+            <tbody>
+              <tr>
+                <th>类型</th>
+                <th>主题</th>
+                <th class="hidden-xs">发布时间</th>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_1.png" width="92" height="26" alt="最新信息"/></td>
+                <td><a href="news_board_notice.html">最新信息</a></td>
+                <td class="hidden-xs">2016.10.28</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_3.png" width="92" height="26" alt="活动信息"/></td>
+                <td><a href="news_board_notice.html">“艺术家进校园”活动丰富瓦房店市校园文化生活</a></td>
+                <td class="hidden-xs">2016.10.28</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_4.png" width="92" height="26" alt="系统公告"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.27</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_2.png" width="92" height="26" alt="生涯好闻"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.26</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_1.png" width="92" height="26" alt="最新信息"/></td>
+                <td><a href="news_board_notice.html">最新信息</a></td>
+                <td class="hidden-xs">2016.10.25</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_3.png" width="92" height="26" alt="活动信息"/></td>
+                <td><a href="news_board_notice.html">“艺术家进校园”活动丰富瓦房店市校园文化生活</a></td>
+                <td class="hidden-xs">2016.10.25</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_4.png" width="92" height="26" alt="系统公告"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.24</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_2.png" width="92" height="26" alt="生涯好闻"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.20</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_1.png" width="92" height="26" alt="最新信息"/></td>
+                <td><a href="news_board_notice.html">最新信息</a></td>
+                <td class="hidden-xs">2016.10.20</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_3.png" width="92" height="26" alt="活动信息"/></td>
+                <td><a href="news_board_notice.html">“艺术家进校园”活动丰富瓦房店市校园文化生活</a></td>
+                <td class="hidden-xs">2016.10.20</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_4.png" width="92" height="26" alt="系统公告"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.18</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_2.png" width="92" height="26" alt="生涯好闻"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.18</td>
+              </tr>
+              <tr>
+                <td><img src="images/news_sort_1.png" width="92" height="26" alt="最新信息"/></td>
+                <td><a href="news_board_notice.html">最新信息</a></td>
+                <td class="hidden-xs">2016.10.17</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_3.png" width="92" height="26" alt="活动信息"/></td>
+                <td><a href="news_board_notice.html">“艺术家进校园”活动丰富瓦房店市校园文化生活</a></td>
+                <td class="hidden-xs">2016.10.17</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_4.png" width="92" height="26" alt="系统公告"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.17</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_2.png" width="92" height="26" alt="生涯好闻"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.16</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_1.png" width="92" height="26" alt="最新信息"/></td>
+                <td><a href="news_board_notice.html">最新信息</a></td>
+                <td class="hidden-xs">2016.10.15</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_3.png" width="92" height="26" alt="活动信息"/></td>
+                <td><a href="news_board_notice.html">“艺术家进校园”活动丰富瓦房店市校园文化生活</a></td>
+                <td class="hidden-xs">2016.10.10</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_4.png" width="92" height="26" alt="系统公告"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.08</td>
+              </tr>
+              <tr>
+                <td height="30"><img src="images/news_sort_2.png" width="92" height="26" alt="生涯好闻"/></td>
+                <td><a href="news_board_notice.html">2016年8月10-12日系统停机进行调整维护</a></td>
+                <td class="hidden-xs">2016.10.01</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- NEWS end--> 
+        <!--<div class="page"> <a href="#" disabled="disabled" class="hidden-xs">第一页</a> <a href="#" class="hidden-xs">上一页</a> 第
+          <select class="form-control input-inline">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          页/共10页 <a href="#" class="hidden-xs">下一页</a> <a href="#" class="hidden-xs">最后一页</a> </div>-->
+        <div id="pagediv" class="page"> <span id="ctl00_Rcontent_Lnews_table_DataPager1"><a  class="hidden-xs">First</a>&nbsp;<a disabled="disabled" class="hidden-xs">Previous</a>&nbsp;<span>1</span>&nbsp;<a disabled="disabled" class="hidden-xs">Next</a>&nbsp;<a disabled="disabled" class="hidden-xs">Last</a>&nbsp;</span> </div>
+        <!-- InstanceEndEditable --></div>
+      <!-- right end --> 
+    </div>
+  </div>
+</div>
+
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="footer">
+  <div class="container">
+    <div class="clearfix">
+      <div class="pull-left"><a href="map.html">网站地图</a></div>
+      <div class="pull-right"> © 2017 NICE CAREER All rights reserved.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/countHeight.js"></script> 
+<script src="js/goTop.js"></script> 
+<!-- InstanceBeginEditable name="jsArea" --> 
+<script>
+$(function(){
+	$('#navbar ul li:nth-child(1) a').addClass('active');
+});
+</script> 
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

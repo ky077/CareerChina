@@ -1,0 +1,68 @@
+.title{
+    background-image: url(../images/spot.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-position: -1px;
+    color: #623d94;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.page { 
+	margin-top: 10px;
+	mmargin-bottom: 20px;
+	text-align: center;
+	font-size:0.9em;
+	> span{
+		> a {
+			text-decoration: none;
+			display:inline-block;
+			color: #666;
+			padding: 4px 8px;
+			margin:0 2px;	
+			border:1px solid #ddd;
+			border-radius: 4px;
+			background-color:#FFF;
+			&:hover, &:active, &:focus {
+				color: #666;
+				background-image: url(../images/naviHover.jpg);
+				background-repeat:repeat-x;
+				background-size:100% 100%;
+			}
+			&[disabled="disabled"], [disabled="disabled"]:hover {
+				cursor:default;
+				color:#ebebeb;
+				border:1px solid #ebebeb; 
+				background-color: transparent;
+				background-image:none;
+			}	
+		}
+	}
+	
+	
+	.more, .next{
+		background-image:url(../images/next.png);
+		background-repeat:no-repeat;
+		background-position:right 1px center;
+		padding-right:25px;
+		&:hover{
+			background-image:	 url(../images/next.png), url(../images/naviHover.jpg);
+			background-repeat:   no-repeat, 			  repeat-x;
+			background-position: right 1px center,		  center center;
+			background-size:	 auto auto, 			  100% 100%;
+		}
+	}
+	.prev{
+		background-image:url(../images/prev.png);
+		background-repeat:no-repeat;
+		background-position:left 1px center;
+		padding-left:25px;
+		&:hover{
+			background-image:	 url(../images/prev.png), url(../images/naviHover.jpg);
+			background-repeat:   no-repeat, 			  repeat-x;
+			background-position: left 1px center,		  center center;
+			background-size:	 auto auto, 			  100% 100%;
+		}
+	}
+}

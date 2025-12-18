@@ -1,0 +1,92 @@
+/* ******* ******* ******* ******* ******* ******* ******* */
+/*ornament: blue*/
+/*ornament: orange*/
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* default ******* ******* ******* ******* ******* ******* */
+/*ad*/
+/*#newsAD{
+	margin-top:-10px;
+	background-color:#FFF;
+}*/
+/*news Table*/
+/*ul.content_block li.news{
+	padding-top:0px;
+}*/
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* news    ******* ******* ******* ******* ******* ******* */
+.news_search {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: #333;
+  font-size: 50%; }
+
+.news_table {
+  text-align: center; }
+  .news_table th {
+    border-bottom: 2px solid #ccc;
+    color: #333; }
+  .news_table td {
+    border-bottom: 1px dashed #E0E0E0;
+    padding: 6px 0px; }
+  .news_table a {
+    color: #06c; }
+    .news_table a:hover {
+      color: #0b903d; }
+
+.news_sort {
+  font-size: 92%;
+  display: inline-block;
+  line-height: 1em;
+  padding: 4px 8px;
+  font-weight: bold;
+  border: 1PX solid; }
+  .news_sort.sys {
+    border-color: #e84a46;
+    color: #e84a46;
+    background-color: #fce4e3;
+    /*rgba(232,74,70,.15);*/ }
+  .news_sort.inf {
+    border-color: #6dc21f;
+    color: #6dc21f;
+    background-color: #e2f3d2;
+    /*rgba(109,194,31,.2);*/ }
+  .news_sort.test {
+    border-color: #ff009c;
+    color: #ff009c;
+    background-color: #ffe6f5;
+    /*rgba(255,0,156,.1);*/ }
+  .news_sort.release {
+    border-color: #1cbbd3;
+    color: #1cbbd3;
+    background-color: #ddf5f9;
+    /*rgba(28,187,211,.15);*/ }
+
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* Login   ******* ******* ******* ******* ******* ******* */
+table#login {
+  margin: 0px auto;
+  padding: 20px 0px;
+  text-align: center;
+  width: 300px; }
+  table#login .login_textfield {
+    width: 100%;
+    /*height:40px;*/
+    font-size: 1.2em;
+    /*padding-top:8px\9;*/
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  table#login .login_btn {
+    height: auto;
+    width: 100%; }
+
+/*:root table#login .login_textfield {
+	padding-top:0px;
+}*/
+/* ******* ******* ******* ******* ******* ******* ******* */
+/* ******* ******* ******* ******* ******* ******* ******* */
+
+/*# sourceMappingURL=default.css.map */

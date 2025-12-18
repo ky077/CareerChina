@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生涯信息系统（高中生）</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/career.ico" >
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/2018styles.css">
+<!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="header">
+  <div class="container">
+    <div class="subnav clearfix"> <span class="pull-right"> <a href="default.aspx" class="homeBtn">首页</a><a href="..\careerj" class="hidden-xs hidden-sm">初中版</a><a href="javascript:" onclick="alert('尚未开放！')" class="hidden-xs hidden-sm">大学版</a><a href="..\senior" class="hidden-xs hidden-sm">生涯测评系统</a><a href="http://nicecareer.net" class="careerBtn">好生涯入口网</a></span></div>
+    <div class="logo"><img src="images/topLogo.png" alt="生涯信息系统（高中生）" class="img-responsive"></div>
+    <div class="navbar">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right navigation">
+          <li><a href="news_board.html">最新信息</a></li>
+          <li><a href="sysIntro.html">系统简介</a></li>
+          <li><a href="senior_index.html">本科专业介绍</a></li>
+          <!-- ↓未登入 顯示區↓ -->
+          <li class="li-login hidden-md hidden-lg">
+            <input type="button" name="" id="" value="登录" class="btn btn-default btn-gray" data-toggle="modal" data-target="#modal-login"/>
+          </li>
+          <!-- ↑未登入 顯示區↑ --> 
+          <!-- ↓已登入 顯示區↓ -->
+          <li class="dropdown hidden-md hidden-lg"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">王小明&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><img src="images/arrowR.jpg" width="12" height="12"/> 我的测评结果</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="text-center">
+                <input type="button" name="" id="" value="退出" class="btn btn-default btn-gray logbtn" onclick="window.location='index.html'"/>
+              </li>
+            </ul>
+          </li>
+          <!-- ↑已登入 顯示區↑ -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ↓未登入 顯示區↓ --> 
+<!-- Modal #modal-login start -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">登录</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="" class="sr-only">帐号</label>
+          <input type="text" class="form-control" id="" placeholder="帐号">
+        </div>
+        <div class="form-group">
+          <label for="" class="sr-only">密码</label>
+          <input type="password" class="form-control" id="" placeholder="密码">
+        </div>
+        <button type="submit" class="btn btn-default btn-block btn-gray">登录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal #modal-login end --> 
+<!-- ↑未登入 顯示區↑ --> 
+
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="main">
+  <div class="container">
+    <div class="row"> 
+      <!-- left start -->
+      <div class="hidden-xs hidden-sm left"> 
+        <!-- login start -->
+        <div class="login">
+          <ul class="list-inline tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#student" aria-controls="student" role="tab" data-toggle="tab">使用者</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="student"> 
+              <!-- ↓未登入 顯示區↓ -->
+              <div class="notLogin">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>帐号：</th>
+                      <td><input name="TB_uid1" type="text" id="TB_uid1" class="textfield"></td>
+                    </tr>
+                    <tr>
+                      <th>密码：</th>
+                      <td><input name="TB_upw1" type="password" id="TB_upw1" class="textfield"></td>
+                    </tr>
+                    <tr>
+                      <th>&nbsp;</th>
+                      <td><input type="submit" name="button" id="loginbtn1" value="登录" class="btn btn-default btn-block btn-gray logbtn"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- ↑未登入 顯示區↑ --> 
+              <!-- ↓已登入 顯示區↓ -->
+              <div class="Logined">
+                <div class="welcome"><span class="logName">王小明</span><br />
+                  欢迎登录生涯信息系统！ </div>
+                <div class="function"><img src="images/arrowR.jpg" width="12" height="12"/>&nbsp;<a href="#" >我的测评结果</a></div>
+                <input type="button" name="" id="" value="退出" class="btn btn-default btn-gray logbtn" onclick="window.location='index.html'"/>
+              </div>
+              <!-- ↑已登入 顯示區↑ --> 
+            </div>
+          </div>
+        </div>
+        <!-- login end --> 
+      </div>
+      <!-- left end --> 
+      <!-- right start -->
+      <div class="right"> right<br>
+        11 <br>
+        221 <br>
+        11 <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <!-- right end --> 
+    </div>
+  </div>
+</div>
+
+<!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+<div class="footer">
+  <div class="container">
+    <div class="clearfix">
+      <div class="pull-left"><a href="map.aspx">网站地图</a></div>
+      <div class="pull-right"> © 2017 NICE CAREER All rights reserved.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<!-- ------- ------- ------- ------- ------- ------- ------- --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

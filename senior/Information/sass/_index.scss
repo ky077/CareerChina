@@ -1,0 +1,16 @@
+.newsBanner{ 
+	width: 100%;
+	margin-bottom:20px;
+	.bd{
+		.bannerpic{
+			.info{
+				a{
+					> img{
+						width:100%;
+						height:auto;
+					}
+				}
+			}
+		}
+	}
+}
