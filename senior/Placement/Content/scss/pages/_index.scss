@@ -103,6 +103,9 @@
 				color: $body-secondary-color;
 				border-color: transparent;
 				padding: ($spacer * .25) 0;
+				white-space: nowrap; 
+				overflow: hidden;
+    			text-overflow: ellipsis;
 				&:hover, &:focus, &:active{
 					color: $primary;
 				}

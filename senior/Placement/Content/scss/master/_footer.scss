@@ -22,12 +22,14 @@ footer{
 			margin-top: .75rem;
 			margin-bottom: .75rem;
 			padding-left: 8.5%;
-			flex-wrap: nowrap;
-			white-space: nowrap;
+			@media screen and (min-width: 480px) {
+			flex-wrap: nowrap;	
+			}
 			a{
 				color: #fff;
 				font-size: 1rem;
 				text-align: left;
+				white-space: nowrap;
 				&:hover, &:focus, &:active{
 					color: $tertiary;
 				}
