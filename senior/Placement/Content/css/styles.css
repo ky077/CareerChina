@@ -2,6 +2,7 @@ header { display: inline; position: relative; }
 header .navbar.sticky-top { top: 0; transition: .5s; }
 header .navbar { font-size: 1.1rem; }
 header .navbar .navbar-brand { flex: 1; }
+@media screen and (min-width: 768px) { header .navbar .navbar-brand { flex: none; } }
 header .navbar .navbar-brand .logo { margin-bottom: 0; }
 header .navbar .navbar-brand .logo img { height: 3.5rem; }
 header .navbar .navbar-toggler { border-color: transparent; padding-left: .5rem; padding-right: .5rem; }
