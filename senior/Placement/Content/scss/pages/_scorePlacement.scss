@@ -285,6 +285,9 @@
 								vertical-align: middle;
 								color: $body-secondary-color;
 								font-size: $font-size-sm;
+								&.td-school-major, &.td-region-type{
+									text-align: left;	
+								}
 								&.td-score-group { 
 									>small{
 										display: block;
@@ -394,10 +397,13 @@
 									font-weight: 600;
 									&.plus{
 										color: $red;
+										&::before{
+											content: "+";
+										}
 									}
-									&.minus{
-										color: $green;
-									}
+									//&.minus{不用-，分數不需要退步...
+										//color: $green;
+									//}
 								}	
 							}
 						}
@@ -409,6 +415,17 @@
 						>tr{
 							>th, >td {
 								background-color: rgba($color, .1);
+							}
+						}
+					}
+					>tbody {
+						>tr{
+							>th, >td{
+								&.td-school-major {
+									.major-name{
+										color: $color;
+									}
+								}
 							}
 						}
 					}
