@@ -240,7 +240,7 @@
 						background-color: rgba($color, .25);
 					}
 					&:hover{
-						background-color: rgba($color, .1);
+						background-color: tint-color($color, 90%);
 					}
 					&.active{	
 						border-bottom: 5px solid $color;

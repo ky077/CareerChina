@@ -207,15 +207,15 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 .scorePlacement .result .result-content .result-tab .nav-link::before { content: ""; display: inline-flex; vertical-align: middle; justify-content: center; align-items: center; font-family: "bootstrap-icons"; font-weight: 900; width: 2rem; height: 2rem; border-radius: 100%; margin-right: .25em; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Sprint"] { color: #e65063; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Sprint"]::before { content: ""; background-color: rgba(230, 80, 99, 0.25); }
-.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Sprint"]:hover { background-color: rgba(230, 80, 99, 0.1); }
+.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Sprint"]:hover { background-color: #fdeeef; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Sprint"].active { border-bottom: 5px solid #e65063; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Stable"] { color: #279a8f; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Stable"]::before { content: ""; background-color: rgba(39, 154, 143, 0.25); }
-.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Stable"]:hover { background-color: rgba(39, 154, 143, 0.1); }
+.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Stable"]:hover { background-color: #e9f5f4; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Stable"].active { border-bottom: 5px solid #279a8f; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Safe"] { color: #008BD6; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Safe"]::before { content: ""; background-color: rgba(0, 139, 214, 0.25); }
-.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Safe"]:hover { background-color: rgba(0, 139, 214, 0.1); }
+.scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Safe"]:hover { background-color: #e6f3fb; }
 .scorePlacement .result .result-content .result-tab .nav-link[aria-controls="result-Safe"].active { border-bottom: 5px solid #008BD6; }
 .scorePlacement .result .result-content .result-tab-content .table-responsive .table { min-width: 1200px; }
 .scorePlacement .result .result-content .result-tab-content .table { margin-bottom: 0; }
@@ -258,9 +258,10 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 
 .careerPlacement { background: url("../img/careerPlacement/banner-bg.png"), linear-gradient(to bottom right, #E96CA8 0%, #3F51B5 25%, #b2b9e1 100%); background-position: top center; background-repeat: no-repeat; }
 .careerPlacement .banner { padding-top: 3rem; padding-bottom: 3rem; position: relative; }
-.careerPlacement .banner::before { content: ""; display: block; width: 20%; height: 0; padding-bottom: 17.7023498695%; position: absolute; top: 1rem; left: 4.166666665%; bottom: 0; background-image: url("../img/careerPlacement/banner-img1.png"); background-position: center center; background-repeat: no-repeat; background-size: 100% 100%; z-index: 1; }
+.careerPlacement .banner::before { content: ""; display: block; width: 20%; height: 0; padding-bottom: 17.7023498695%; position: absolute; top: 1rem; left: 4.166666665%; bottom: 0; background-image: url("../img/careerPlacement/banner-img1.png"); background-position: center center; background-repeat: no-repeat; background-size: 100% 100%; z-index: 2; }
 .careerPlacement .banner::after { content: ""; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-image: url("../img/careerPlacement/banner-img2.png"), url("../img/nice-hi.png"); background-position: right 14.5833333275% center, right 4.166666665% center; background-repeat: no-repeat; background-size: auto 75%, auto 60%; z-index: 1; }
-.careerPlacement .banner .banner-title { color: #fff; font-size: 1.75rem; font-weight: 500; text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.5); text-align: center; margin-bottom: 0; position: relative; z-index: 1; }
+.careerPlacement .banner > * { position: relative; z-index: 2; }
+.careerPlacement .banner .banner-title { color: #fff; font-size: 1.75rem; font-weight: 500; text-shadow: 1px 1px 0.125rem rgba(0, 0, 0, 0.5); text-align: center; margin-bottom: 0; }
 .careerPlacement .banner .banner-title > small { display: block; margin-top: .75rem; font-size: 1rem; line-height: 1.5; font-weight: 400; color: rgba(255, 255, 255, 0.85); }
 .careerPlacement .search { padding-bottom: 3rem; }
 .careerPlacement .search .card { border-width: 0; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); background-color: rgba(255, 255, 255, 0.75); }
@@ -282,7 +283,7 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 .careerPlacement .search .card .btn-group .btn-check + .btn { background-color: #fff; padding-left: 0; padding-right: 0; width: calc( (100%/4) - 0.25rem ); }
 @media screen and (min-width: 1600px) { .careerPlacement .search .card .btn-group .btn-check + .btn { width: calc( (100%/8) - 0.25rem ); } }
 .careerPlacement .search .card .btn-group .btn-check:checked + .btn { border-color: #3F51B5; background-color: #3F51B5; color: #fff; }
-.careerPlacement .result { padding-bottom: 3rem; background-color: #f8f9fa; position: relative; z-index: 2; }
+.careerPlacement .result { padding-bottom: 3rem; background-color: #f8f9fa; position: relative; z-index: 3; }
 .careerPlacement .result .result-info { padding-top: 1.5rem; padding-bottom: 1.5rem; background-color: #fff; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); }
 .careerPlacement .result .result-info .avater { width: 5rem; height: 5rem; font-size: calc(5rem * .4); margin: 0 auto; background-color: #3F51B5; color: #fff; }
 .careerPlacement .result .result-info .student-name { display: inline-block; font-size: 1.25rem; margin-right: 1rem; }
@@ -302,17 +303,17 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 .careerPlacement .result .result-content .scrollspy-nav .nav-link.active { color: #fff; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"] { color: #e65063; border-left: 5px solid #e65063; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"]::before { content: ""; background-color: rgba(230, 80, 99, 0.25); }
-.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"]:hover { background-color: rgba(230, 80, 99, 0.1); }
+.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"]:hover { background-color: #fdeeef; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"].active { background-color: #e65063; color: #fff; border-color: #fff; filter: drop-shadow(-1px 0 #e65063); }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Sprint"].active::before { background-color: #fff; color: #e65063; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"] { color: #279a8f; border-left: 5px solid #279a8f; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"]::before { content: ""; background-color: rgba(39, 154, 143, 0.25); }
-.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"]:hover { background-color: rgba(39, 154, 143, 0.1); }
+.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"]:hover { background-color: #e9f5f4; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"].active { background-color: #279a8f; color: #fff; border-color: #fff; filter: drop-shadow(-1px 0 #279a8f); }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Stable"].active::before { background-color: #fff; color: #279a8f; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"] { color: #008BD6; border-left: 5px solid #008BD6; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"]::before { content: ""; background-color: rgba(0, 139, 214, 0.25); }
-.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"]:hover { background-color: rgba(0, 139, 214, 0.1); }
+.careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"]:hover { background-color: #e6f3fb; }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"].active { background-color: #008BD6; color: #fff; border-color: #fff; filter: drop-shadow(-1px 0 #008BD6); }
 .careerPlacement .result .result-content .scrollspy-nav .nav-link[href="#Safe"].active::before { background-color: #fff; color: #008BD6; }
 .careerPlacement .result .result-content .scrollspy-content .card { --bs-card-border-color: transparent; --bs-card-border-radius: var(--bs-border-radius-xl); box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); margin-bottom: 1.5rem; font-size: 0.875rem; }
