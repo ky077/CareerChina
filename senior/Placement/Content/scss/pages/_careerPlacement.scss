@@ -78,9 +78,17 @@
 				label{
 					font-size: $font-size-sm;
 				}
+				.col-form-label{
+					min-width: 8rem;
+				}
+				.search-subject-score{ 
+					.col-form-label, .form-control{
+						text-align: center;
+					}
+				}
 			}
 			
-			.form-control:focus{
+			.form-control:focus, .form-select:focus{
 				border-color: rgba($placement-color, $focus-ring-opacity);
     			box-shadow: 0 0 $focus-ring-blur $focus-ring-width rgba($placement-color, $focus-ring-opacity);
 			}

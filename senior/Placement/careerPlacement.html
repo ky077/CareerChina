@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>赞生涯生涯落点分析系统 高中生</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="生涯規劃不再迷惘！讚生涯帶你掌握精彩職涯旅程！" name="description">
-<meta content= "生涯,落点,分析,落点分析,讚,讚生涯,高中生,,高中生生涯" name="keywords">
+<meta content="赞生涯生涯落点分析系统 结合成绩、能力与潜能AI分析,助你规划升学路径" name="description">
+<meta content="生涯,落点,分析,落点分析,赞,赞生涯,高中生,,高中生生涯" name="keywords">
 <link href="Content/img/favicon.ico" rel="icon">
 <!-- AlibabaPuHuiTi Fonts -->
 <link rel="stylesheet" href="Content/css/fonts.css">
@@ -32,10 +32,10 @@
       <div class="container-lg">
         <div class="row">
           <div class="col">
-            <h2 class="banner-title">生涯落点查询<small>跳脫傳統只看分數的錄取推估，整合你的考試成績、潛能能力與興趣特質測評結果。<br>
-              系統不僅幫你判斷「能不能錄取」，更引導你思考「適不適合就讀」。<br>
-              透過多面向分析，學生在填報志願時可同時考量分數、能力與興趣，<br>
-              找到既有錄取機會又符合自身特性的校系或專業，輕鬆做出最適合自己的升學與生涯選擇。</small></h2>
+            <h2 class="banner-title">生涯落点查询<small>跳脱传统只看分数的录取推估，整合你的考试成绩、潜能能力与兴趣特质测评结果。<br>
+              系统不仅帮你判断「能不能录取」，更引导你思考「适不适合就读」。<br>
+              透过多面向分析，学生在填报志愿时可同时考虑分数、能力与兴趣，<br>
+              找到既有录取机会又符合自身特性的校系或专业，轻松做出最适合自己的升学与生涯选择。</small></h2>
           </div>
         </div>
       </div>
@@ -53,10 +53,10 @@
               </div>
               <div class="card-body">
                 <div class="row gx-2 mb-3">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">所在年级︰</label>
-                  <div class="col-lg-10">
-                    <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="">
-                      <option selected>選擇年級...</option>
+                  <label for="searchGrade" class="col-auto col-form-label text-lg-end">所在年级︰</label>
+                  <div class="col-auto col-lg">
+                    <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="searchGrade">
+                      <option selected>选择年级...</option>
                       <option value="1">高一</option>
                       <option value="2">高二</option>
                       <option value="3">高三</option>
@@ -64,8 +64,8 @@
                   </div>
                 </div>
                 <div class="row gx-2 mb-3">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">高考分科︰</label>
-                  <div class="col-lg-10">
+                  <label for="" class="col-auto col-form-label text-lg-end">高考分科︰</label>
+                  <div class="col-auto col-lg">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="radio" name="" id="" value="1" checked>
                       <label class="form-check-label" for="">理科</label>
@@ -80,48 +80,48 @@
                     </div>
                   </div>
                 </div>
-                <div class="row gx-2 mb-2">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">選考科目分數︰</label>
-                  <div class="col-lg-10">
-                    <div class="row row-cols-3">
-                      <div class="col search-subject-score">
-                        <label for="" class="col-auto col-form-label">歷史</label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                <div class="row gx-2 mb-3">
+                  <label for="" class="col-auto col-form-label text-lg-end">选考科目分数︰</label>
+                  <div class="col-auto col-lg">
+                    <div class="row row-cols-3 mb-3 search-subject-score">
+                      <div class="col col-lg-2">
+                        <label for="score1" class="col-auto col-form-label">历史</label>
+                        <input name="" type="text" id="score1" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col">
-                        <label for="" class="col-auto col-form-label">地理</label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                      <div class="col col-lg-2">
+                        <label for="score2" class="col-auto col-form-label">地理</label>
+                        <input name="" type="text" id="score2" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col">
-                        <label for="" class="col-auto col-form-label">思想政治</label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                      <div class="col col-lg-2">
+                        <label for="score3" class="col-auto col-form-label">思想政治</label>
+                        <input name="" type="text" id="score3" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col">
-                        <label for="" class="col-auto col-form-label">物理 </label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                      <div class="col col-lg-2">
+                        <label for="score4" class="col-auto col-form-label">物理 </label>
+                        <input name="" type="text" id="score4" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col">
-                        <label for="" class="col-auto col-form-label">化學</label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                      <div class="col col-lg-2">
+                        <label for="score5" class="col-auto col-form-label">化学</label>
+                        <input name="" type="text" id="score5" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col">
-                        <label for="" class="col-auto col-form-label">生物</label>
-                        <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                      <div class="col col-lg-2">
+                        <label for="score6" class="col-auto col-form-label">生物</label>
+                        <input name="" type="text" id="score6" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                    </div>
+                    </div>  
                   </div>
                 </div>
                 <div class="row gx-2 mb-2">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">高考(预估)分数︰</label>
-                  <div class="col-lg-10">
+                  <label for="" class="col-auto col-form-label text-lg-end">高考(预估)分数︰</label>
+                  <div class="col-auto col-lg">
                     <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
                   </div>
                 </div>
                 <div class="row gx-2 mb-2">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">录取批次︰</label>
-                  <div class="col-lg-10">
+                  <label for="" class="col-auto col-form-label text-lg-end">录取批次︰</label>
+                  <div class="col-auto col-lg">
                     <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="">
-                      <option selected>選擇批次...</option>
+                      <option selected>选择批次...</option>
                       <option value="1">一批</option>
                       <option value="2">二批</option>
                       <option value="3">三批</option>
@@ -129,8 +129,8 @@
                   </div>
                 </div>
                 <div class="row gx-2 mb-2">
-                  <label for="" class="col-lg-2 col-form-label text-lg-end">意向求学地区︰</label>
-                  <div class="col-lg-10">
+                  <label for="" class="col-auto col-form-label text-end">意向求学地区︰</label>
+                  <div class="col-auto col-lg">
                     <div class="btn-group">
                       <input type="checkbox" class="btn-check" id="CBL_area_0" autocomplete="off">
                       <label class="btn" for="CBL_area_0">北京</label>
@@ -196,7 +196,7 @@
                       <label class="btn" for="CBL_area_30">新疆</label>
                       <input type="checkbox" class="btn-check" id="CBL_area_31" autocomplete="off">
                       <label class="btn" for="CBL_area_31">香港特别行政区</label>
-                      <button type="button" class="btn" id="checkAll">全選</button>
+                      <button type="button" class="btn" id="checkAll">全选</button>
                       <button type="button" class="btn" id="clearAll">取消</button>
                     </div>
                   </div>
@@ -208,6 +208,7 @@
         </div>
       </div>
     </div>
+
     <!-- search end --> 
     
     <!-- result start -->
@@ -234,7 +235,7 @@
               <div class="student-score">
                 <label>700</label>
                 分</div>
-              <div class="student-scoreBatch">超過<span>一批</span>線
+              <div class="student-scoreBatch">超过<span>一批</span>线
                 <label class="mx-1">150</label>
                 分</div>
             </div>
@@ -360,13 +361,13 @@
                     <div class="col">
                       <div class="major-title">专业领域排序与分数(门坎线/安全线)</div>
                       <ul class="major-list">
-                        <li><span>跨領域</span>
+                        <li><span>跨领域</span>
                           <ul>
                             <li>理科试验班类<small>(654/681)</small></li>
                             <li>社会科学试验班<small>(653/681)</small></li>
                           </ul>
                         </li>
-                        <li class="matchTA matchTI"><span>工程領域</span>
+                        <li class="matchTA matchTI"><span>工程领域</span>
                           <ul>
                             <li>工科试验班<small>(653/681)</small></li>
                           </ul>
@@ -391,7 +392,7 @@
                     <div class="col">
                       <div class="major-title">专业领域排序与分数(门坎线/安全线)</div>
                       <ul class="major-list">
-                        <li><span>跨領域</span>
+                        <li><span>跨领域</span>
                           <ul>
                             <li>理科试验班<small>(657/672)</small></li>
                           </ul>
@@ -476,7 +477,9 @@
           </div>
         </div>
       </div>
+	  <div class="col text-center mt-5"><a href="careerPlacement.html" class="btn btn-secondary rounded-pill px-4" id="">重新分析</a></div>	
     </div>
+
     <!-- search end --> 
   </main>
   <footer></footer>

@@ -175,7 +175,7 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 .scorePlacement .search .card .card-header .card-title { font-size: 1rem; font-weight: 500; margin-bottom: 0; padding-left: 4.8rem; }
 .scorePlacement .search .card .card-header .card-title > img { width: 4.8rem; height: 4.8rem; position: absolute; bottom: 0; left: 0.5rem; }
 .scorePlacement .search .card .card-body label { font-size: 0.875rem; }
-.scorePlacement .search .card .form-control:focus { border-color: rgba(0, 122, 199, 0.25); box-shadow: 0 0 0 0.25rem rgba(0, 122, 199, 0.25); }
+.scorePlacement .search .card .form-control:focus, .scorePlacement .search .card .form-select:focus { border-color: rgba(0, 122, 199, 0.25); box-shadow: 0 0 0 0.25rem rgba(0, 122, 199, 0.25); }
 .scorePlacement .search .card .form-check-input:focus { box-shadow: 0 0 0 0.25rem rgba(0, 122, 199, 0.25); }
 .scorePlacement .search .card .form-check-input:hover + .form-check-label { color: #007ac7; }
 .scorePlacement .search .card .form-check-input:checked { background-color: #007ac7; border-color: #007ac7; }
@@ -265,7 +265,9 @@ main.news { background: -webkit-linear-gradient(rgba(204, 225, 241, 0.25) 0%, rg
 .careerPlacement .search .card .card-header { border-bottom: 0; padding: 1rem 1rem; }
 .careerPlacement .search .card .card-header .card-title { font-size: 1rem; font-weight: 500; margin-bottom: 0; }
 .careerPlacement .search .card .card-body label { font-size: 0.875rem; }
-.careerPlacement .search .card .form-control:focus { border-color: rgba(63, 81, 181, 0.25); box-shadow: 0 0 0 0.25rem rgba(63, 81, 181, 0.25); }
+.careerPlacement .search .card .card-body .col-form-label { min-width: 8rem; }
+.careerPlacement .search .card .card-body .search-subject-score .col-form-label, .careerPlacement .search .card .card-body .search-subject-score .form-control { text-align: center; }
+.careerPlacement .search .card .form-control:focus, .careerPlacement .search .card .form-select:focus { border-color: rgba(63, 81, 181, 0.25); box-shadow: 0 0 0 0.25rem rgba(63, 81, 181, 0.25); }
 .careerPlacement .search .card .form-check-input:focus { box-shadow: 0 0 0 0.25rem rgba(63, 81, 181, 0.25); }
 .careerPlacement .search .card .form-check-input:hover + .form-check-label { color: #3F51B5; }
 .careerPlacement .search .card .form-check-input:checked { background-color: #3F51B5; border-color: #3F51B5; }
