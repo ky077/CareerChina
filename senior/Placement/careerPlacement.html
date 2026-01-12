@@ -53,7 +53,7 @@
               </div>
               <div class="card-body">
                 <div class="row gx-2 mb-3">
-                  <label for="searchGrade" class="col-auto col-form-label text-lg-end">所在年级︰</label>
+                  <label for="searchGrade" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>所在年级︰</label>
                   <div class="col-auto col-lg">
                     <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="searchGrade">
                       <option selected>选择年级...</option>
@@ -64,63 +64,63 @@
                   </div>
                 </div>
                 <div class="row gx-2 mb-3">
-                  <label for="" class="col-auto col-form-label text-lg-end">高考分科︰</label>
-                  <div class="col-auto col-lg">
+                  <label for="" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>高考分科︰</label>
+                  <div class="col-auto col-lg pt-1">
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="" id="" value="1" checked>
-                      <label class="form-check-label" for="">理科</label>
+                      <input class="form-check-input" type="radio" name="suject" id="s1" value="1" checked>
+                      <label class="form-check-label" for="s1">理科</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="" id="" value="2">
-                      <label class="form-check-label" for="">文科</label>
+                      <input class="form-check-input" type="radio" name="suject" id="s2" value="2">
+                      <label class="form-check-label" for="s2">文科</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="" id="" value="2">
-                      <label class="form-check-label" for=""> 不分文理</label>
+                      <input class="form-check-input" type="radio" name="suject" id="s3" value="3">
+                      <label class="form-check-label" for="s3">不分文理</label>
                     </div>
                   </div>
                 </div>
                 <div class="row gx-2 mb-3">
-                  <label for="" class="col-auto col-form-label text-lg-end">选考科目分数︰</label>
+                  <label for="" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>选考科目分数︰</label>
                   <div class="col-auto col-lg">
-                    <div class="row row-cols-3 mb-3 search-subject-score">
-                      <div class="col col-lg-2">
-                        <label for="score1" class="col-auto col-form-label">历史</label>
+                    <div class="row row-cols-3 row-cols-lg-6 mb-3 search-subject-score">
+                      <div class="col">
+                        <label for="score1" class="col-form-label">历史</label>
                         <input name="" type="text" id="score1" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col col-lg-2">
-                        <label for="score2" class="col-auto col-form-label">地理</label>
+                      <div class="col">
+                        <label for="score2" class="col-form-label">地理</label>
                         <input name="" type="text" id="score2" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col col-lg-2">
-                        <label for="score3" class="col-auto col-form-label">思想政治</label>
+                      <div class="col">
+                        <label for="score3" class="col-form-label">思想政治</label>
                         <input name="" type="text" id="score3" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col col-lg-2">
-                        <label for="score4" class="col-auto col-form-label">物理 </label>
+                      <div class="col">
+                        <label for="score4" class="col-form-label">物理 </label>
                         <input name="" type="text" id="score4" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col col-lg-2">
-                        <label for="score5" class="col-auto col-form-label">化学</label>
+                      <div class="col">
+                        <label for="score5" class="col-form-label">化学</label>
                         <input name="" type="text" id="score5" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                      <div class="col col-lg-2">
-                        <label for="score6" class="col-auto col-form-label">生物</label>
+                      <div class="col">
+                        <label for="score6" class="col-form-label">生物</label>
                         <input name="" type="text" id="score6" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
                     </div>  
                   </div>
                 </div>
-                <div class="row gx-2 mb-2">
-                  <label for="" class="col-auto col-form-label text-lg-end">高考(预估)分数︰</label>
+                <div class="row gx-2 mb-3">
+                  <label for="preScore" class="col-auto col-form-label text-lg-end">高考(预估)分数︰</label>
                   <div class="col-auto col-lg">
-                    <input name="" type="text" id="" class="form-control form-control-sm rounded-0 d-inline w-auto">
+                    <input name="" type="text" id="preScore" class="form-control form-control-sm rounded-0 d-inline w-auto">
                   </div>
                 </div>
-                <div class="row gx-2 mb-2">
-                  <label for="" class="col-auto col-form-label text-lg-end">录取批次︰</label>
+                <div class="row gx-2 mb-3">
+                  <label for="batch" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>录取批次︰</label>
                   <div class="col-auto col-lg">
-                    <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="">
+                    <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="batch">
                       <option selected>选择批次...</option>
                       <option value="1">一批</option>
                       <option value="2">二批</option>
@@ -128,7 +128,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="row gx-2 mb-2">
+                <div class="row gx-2 mb-3">
                   <label for="" class="col-auto col-form-label text-end">意向求学地区︰</label>
                   <div class="col-auto col-lg">
                     <div class="btn-group">

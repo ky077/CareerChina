@@ -38,6 +38,11 @@ a{
 .form-check-input[type="radio"]:checked{
 	background-color: $white !important;
 }
+.form-required{
+	color: $danger;
+	position: absolute;
+	transform: translate(-.5em, -.25em);
+}
 .icon-link {
 	align-items: flex-start;
 }
