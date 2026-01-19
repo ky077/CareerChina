@@ -274,14 +274,12 @@
 								vertical-align: middle;
 								color: $body-secondary-color;
 								font-size: $font-size-sm;
+								>small{
+									display: block;
+									color: $gray-600;
+								}
 								&.td-school-major, &.td-region-type{
 									text-align: left;	
-								}
-								&.td-score-group { 
-									>small{
-										display: block;
-										color: $gray-600;
-									}
 								}
 							}
 						}

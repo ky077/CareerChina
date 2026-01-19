@@ -56,7 +56,7 @@
                   <label for="searchGrade" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>所在年级︰</label>
                   <div class="col-auto col-lg">
                     <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="searchGrade">
-                      <option selected>选择年级...</option>
+                      <option selected disabled>选择年级...</option>
                       <option value="1">高一</option>
                       <option value="2">高二</option>
                       <option value="3">高三</option>
@@ -108,7 +108,7 @@
                         <label for="score6" class="col-form-label">生物</label>
                         <input name="" type="text" id="score6" class="form-control form-control-sm rounded-0 d-inline w-100" placeholder="分数">
                       </div>
-                    </div>  
+                    </div>
                   </div>
                 </div>
                 <div class="row gx-2 mb-3">
@@ -121,7 +121,7 @@
                   <label for="batch" class="col-auto col-form-label text-lg-end"><span class="form-required">*</span>录取批次︰</label>
                   <div class="col-auto col-lg">
                     <select class="form-select form-select-sm rounded-0 d-inline w-auto" id="batch">
-                      <option selected>选择批次...</option>
+                      <option selected disabled>选择批次...</option>
                       <option value="1">一批</option>
                       <option value="2">二批</option>
                       <option value="3">三批</option>
@@ -476,14 +476,15 @@
           </div>
         </div>
       </div>
-	  <div class="col text-center mt-5"><a href="careerPlacement.html" class="btn btn-secondary rounded-pill px-4" id="">重新分析</a></div>	
+      <div class="col text-center mt-5"><a href="careerPlacement.html" class="btn btn-secondary rounded-pill px-4" id="">重新分析</a></div>
     </div>
     <!-- result end --> 
   </main>
   <footer></footer>
   <!-- Back to Top --> 
-  <a href="#" class="btn btn-outline-primary rounded-circle back-to-top" style="display: none;"><i class="bi bi-arrow-up"></i></a>	
+  <a href="#" class="btn btn-outline-primary rounded-circle back-to-top" style="display: none;"><i class="bi bi-arrow-up"></i></a>
 </form>
+
 <!-- ------- ------- ------- ------- ------- ------- ------- --> 
 <!-- ------- ------- ------- ------- ------- ------- ------- --> 
 <!-- ------- ------- ------- ------- ------- ------- ------- --> 
@@ -579,7 +580,7 @@ $(document).ready(function() {
 	// 初始狀態（例如北京預設 checked）
 	syncCheckAll();	
 })	
-</script>
+</script> 
 <script>
 //符合class
 const MATCH_CLASS = {
@@ -710,6 +711,6 @@ function initMatchTooltips() {
 	//TA + TI
 	makeTooltip($('.matchTA.matchTI > span'), '性向匹配、兴趣匹配');
 }
-</script>	
+</script>
 </body>
 </html>
